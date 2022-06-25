@@ -1,0 +1,6 @@
+const TOGGLE_APP_THEME = 'TOGGLE_APP_THEME';
+
+export {
+  TOGGLE_APP_THEME,
+  
+}

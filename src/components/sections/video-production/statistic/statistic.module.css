@@ -1,0 +1,122 @@
+.statistic {
+  width: 100%;
+  height: 810rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  /* gap: 370rem; */
+  align-items: center;
+  width: 90%
+}
+
+.video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-image: url(../../../../images/statistic.png);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.video::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.blockMenu {
+  display: grid;
+  height: fit-content;
+  gap: 28rem;
+}
+
+.menuElement {
+  font-size: var(--font-size-middle);
+  font-weight: 600;
+  line-height: 29rem;
+  color: var(--color-white);
+  padding: 8rem 26rem;
+  width: fit-content;
+  transition: all 0.35s ease-out;
+  border-radius: 15rem;
+
+}
+
+.isActive {
+  box-shadow: 0px 0px 100rem 35rem rgba(250, 17, 106, 0.25);
+  background-color: var(--color-pink);
+  cursor: pointer;
+}
+
+.numbers {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-self: end;
+  justify-self: end;
+}
+
+.numbersList {
+  margin-bottom: 35rem;
+  position: relative;
+  width: 700rem;
+  height: 100rem;
+}
+
+.numbersListElement {
+  width: 100%;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-out;
+}
+
+.isShown {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.button {
+  margin-bottom: 70rem;
+  padding: 20rem 40rem;
+  border-radius: 15rem;
+  background: linear-gradient(93.31deg, #FA116A 6.54%, #FA116A 56.61%, #C6004B 98.97%);
+  box-shadow: 0px 0px 100rem 35rem rgba(250, 17, 106, 0.25);
+  background-color: var(--color-pink);
+  border: none;
+  color: var(--color-white);
+  line-height: 29rem;
+  font-size: var(--font-size-middle);
+  transition: all ease-out 0.35s;
+}
+
+.button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 100rem 35rem rgba(250, 17, 106, 0.3);
+
+}
+
+
+.ps {
+  font-weight: 300;
+  font-size: var(--font-size-body-middle);
+  line-height: 12rem;
+  color: var(--color-white);
+  margin-bottom: 35rem;
+  align-self: flex-end;
+
+}

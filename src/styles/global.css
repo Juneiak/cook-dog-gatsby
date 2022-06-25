@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+html {
+  font-size: calc(1vw / 14.4)
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: calc(1vw / 3.75)
+  }
+}
+
+:root {
+  --font-basic: 'Montserrat', sans-serif;
+  --color-white: white;
+  --color-black: #000;
+
+  --color-pink: #FA116A;
+  --color-blue: #1DBDF1;
+
+  --color-error: red;
+
+  --font-size-large: 64rem;
+  --font-size-big: 36rem;
+  --font-size-middle: 24rem;
+  --font-size-small: 20rem;
+
+  --font-size-caption-big: 18rem;
+  --font-size-caption-middle: 16rem;
+  --font-size-caption-small: 14rem;
+  
+  --font-size-body-big: 12rem;
+  --font-size-body-middle: 10rem;
+  --font-size-body-small: 8rem;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', 'Oxygen', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+}
+
+p, h1, h2, h3, h4, h5, h6, pre {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}

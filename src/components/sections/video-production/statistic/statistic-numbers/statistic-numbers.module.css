@@ -1,0 +1,22 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.listElement {
+}
+
+.number {
+  font-size: var(--font-size-large);
+  color: var(--color-white);
+  font-weight: 900;
+  text-align: center;
+
+}
+
+.about {
+  font-size: var(--font-size-caption-middle);
+  line-height: 19.5rem;
+  color: var(--color-white);
+  text-align: center;
+}
