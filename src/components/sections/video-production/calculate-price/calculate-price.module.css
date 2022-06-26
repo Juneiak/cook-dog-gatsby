@@ -1,0 +1,143 @@
+.calculatePrice {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 70rem 0;
+  background-color: var(--color-black);;
+}
+
+.content {
+  display: grid;
+  gap: 190rem;
+  width: 85%;
+  grid-auto-flow: column;
+}
+
+.text {
+  width: 715rem;
+}
+
+.title {
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: var(--font-size-large);
+  line-height: 78rem;
+  margin-bottom: 35rem;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: var(--font-size-small);;
+  line-height: 24rem;
+  color: var(--color-white);
+  margin-bottom: 50rem;
+  width: 500rem
+}
+
+.button {
+  border-radius: 15rem;
+  overflow: hidden;
+  background-image: linear-gradient(180deg, #56D5FE 0%, rgba(3, 8, 9, 0) 85%, rgba(0, 0, 0, 0) 100%);
+  border: none;
+  width: 496rem;
+  height: 64rem;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:hover .buttonTextContainer2 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.button:hover .buttonText2 {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.button:hover .buttonTextContainer1 {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.button:hover .buttonText1 {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.buttonTextContainer1 {
+  position: absolute;
+  border-radius: 15rem;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: calc(100% - 3rem);
+  height: calc(100% - 3rem);
+  background-color: black;
+  display: block;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: opacity 0.35s ease-out, visibility 0.35s ease-out;
+  opacity: 1;
+  visibility: visible;
+}
+
+.buttonTextContainer2 {
+  position: absolute;
+  border-radius: 15rem;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: calc(100% - 3rem);
+  height: calc(100% - 3rem);
+  background: linear-gradient(269.01deg, #37CEFF 7.94%, #37CEFF 50.43%, #00A8DF 91.18%);
+  display: block;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: opacity 0.35s ease-out, visibility 0.35s ease-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.buttonText1 {
+  background-clip: text;
+  text-fill-color: transparent;
+  background: linear-gradient(269.01deg, #37CEFF 7.94%, #37CEFF 50.43%, #00A8DF 91.18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: var(--font-size-big);
+  line-height: 44rem;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.buttonText2 {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: var(--font-size-big);
+  line-height: 44rem;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.imageContainer {
+  width: 239rem;
+  height: 348rem;
+}
