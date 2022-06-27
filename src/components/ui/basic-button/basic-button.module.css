@@ -1,0 +1,129 @@
+.button {
+  border-radius: 15rem;
+  overflow: hidden;
+  
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.pink {
+  background-image: linear-gradient(180deg, #FA116A 0%, rgba(3, 8, 9, 0) 85%, rgba(0, 0, 0, 0) 100%);
+}
+
+.blue {
+  background-image: linear-gradient(180deg, #56D5FE 0%, rgba(3, 8, 9, 0) 85%, rgba(0, 0, 0, 0) 100%);
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:hover .buttonTextContainer2 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.button:hover .buttonText2 {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.button:hover .buttonTextContainer1 {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.button:hover .buttonText1 {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.buttonTextContainer1 {
+  position: absolute;
+  border-radius: 15rem;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: calc(100% - 3rem);
+  height: calc(100% - 3rem);
+  background-color: black;
+  display: block;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: opacity 0.35s ease-out, visibility 0.35s ease-out;
+  opacity: 1;
+  visibility: visible;
+}
+
+.buttonTextContainer2 {
+  position: absolute;
+  border-radius: 15rem;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: calc(100% - 3rem);
+  height: calc(100% - 3rem);
+  /* background: linear-gradient(269.01deg, #37CEFF 7.94%, #37CEFF 50.43%, #00A8DF 91.18%); */
+  display: block;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: opacity 0.35s ease-out, visibility 0.35s ease-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.blue .buttonTextContainer2 {
+  background: linear-gradient(269.01deg, #37CEFF 7.94%, #37CEFF 50.43%, #00A8DF 91.18%);
+}
+
+.pink .buttonTextContainer2 {
+  background: linear-gradient(269.01deg, #FF2D7D 7.94%, #D30051 50.43%, #FF2D7D 91.18%);
+}
+
+.buttonText1 {
+  font-weight: 600;
+  font-size: var(--font-size-big);
+  line-height: 44rem;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+  opacity: 1;
+  visibility: visible;
+}
+
+.blue .buttonText1 {
+  background: linear-gradient(269.01deg, #37CEFF 7.94%, #37CEFF 50.43%, #00A8DF 91.18%);
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink .buttonText1 {
+  background: linear-gradient(269.01deg, #FF2D7D 7.94%, #D30051 50.43%, #FF2D7D 91.18%);
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.buttonText2 {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: var(--font-size-big);
+  line-height: 44rem;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+  opacity: 0;
+  visibility: hidden;
+}
